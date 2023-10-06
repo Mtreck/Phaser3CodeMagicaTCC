@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Monstro = É.físico({
+    nome: 'Caveira',
+        localidade: {
+            x:1480,
+            y:150,
+            },
+            tamanho:(normal),
+            arma: (espda),
+            armadura: (null),
+            vida: (2),
+            Dano: (1),
+
+            portal-funcionado = true
+            
+         })
