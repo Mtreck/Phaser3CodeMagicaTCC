@@ -14,7 +14,11 @@ Phaser 3
 Nosso jogo de aprendizado de programação é projetado para ensinar conceitos básicos, como:
 
 Variáveis
+
 Operadores lógicos
+
 Laços de repetição
+
 Estruturas condicionais
+
 Siga as instruções no jogo para começar a aprender e praticar esses conceitos de programação de uma maneira divertida!
