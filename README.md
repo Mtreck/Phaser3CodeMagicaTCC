@@ -10,9 +10,6 @@ Tecnologias Utilizadas
 JavaScript
 Phaser 3 
 
-# Instalação
-Se você deseja executar o jogo localmente ou contribuir para o projeto, siga estas etapas:
-
 # Uso
 Nosso jogo de aprendizado de programação é projetado para ensinar conceitos básicos, como:
 
