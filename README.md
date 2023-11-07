@@ -1,5 +1,5 @@
 # TCC_Jogo_Educativo
-Jogo de Aprendizado de Programação
+#Jogo de Aprendizado de Programação
 Este é o repositório do meu Trabalho de Conclusão de Curso (TCC), um jogo educacional desenvolvido com JavaScript e o framework Phaser 3. O objetivo principal do projeto é oferecer uma abordagem lúdica e divertida para o ensino de programação. Utilizamos a metodologia de gamificação e abordagens ativas para tornar o aprendizado de conceitos básicos de programação mais envolvente.
 
 Objetivos
@@ -8,11 +8,12 @@ Oferecer um ambiente de aprendizado prático para iniciantes em programação.
 Explorar o potencial educacional de jogos e gamificação.
 Tecnologias Utilizadas
 JavaScript
-Phaser 3 (Inclua outras bibliotecas ou ferramentas relevantes, se aplicável)
-Instalação
+Phaser 3 
+
+#Instalação
 Se você deseja executar o jogo localmente ou contribuir para o projeto, siga estas etapas:
 
-Uso
+#Uso
 Nosso jogo de aprendizado de programação é projetado para ensinar conceitos básicos, como:
 
 Variáveis
