@@ -7,7 +7,16 @@ class Scene01 extends Phaser.Scene{
  
 
     create(){
-        
+        this.musicaFase1 = this.sound.add('audio-fundo1', {
+            loop: true, // defina como verdadeiro se você deseja que a música seja executada em loop
+            volume: 0.1 // defina o volume da música (entre 0 e 1)
+        });
+        this.musicaFase1.play();
+     
+
+    
+      
+
         this.control = this.input.keyboard.createCursorKeys();
 
         this.fundo = this.add.image(0,0,'bg1').setOrigin(0,0)
@@ -230,62 +239,44 @@ class Scene01 extends Phaser.Scene{
         
             //---------------colisão player-cat-------------------------------
 
-            
-      
-             
            
             this.physics.add.overlap(this.player,this.cat1, function ()  { 
                     this.dialogo1.setVisible(true)
-
                 this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo1.destroy()
                     this.dialogo2.setVisible(true)
 
-                            this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo2.destroy()
-                                this.dialogo4.setVisible(true)
+                        this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo2.destroy()
+                             this.dialogo5.setVisible(true)
 
-                                    this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo4.destroy()
-                                        this.dialogo5.setVisible(true)
+                                this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo5.destroy()
+                                    this.dialogo6.setVisible(true)
 
-                                            this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo5.destroy()
-                                                this.dialogo6.setVisible(true)  
+                                        this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo6.destroy()
+                                            this.dialogo7.setVisible(true)  
 
-                                                    this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo6.destroy()
-                                                        this.dialogo7.setVisible(true)
-
-                                                            this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo7.destroy()
-                                                                this.dialogo8.setVisible(true)
-
-                                                                    this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo8.destroy()
-                                                                        this.dialogo9.setVisible(true)
-                                                                        
-                                                                        this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo9.destroy()
-                                                                            this.dialogo10.setVisible(true)
-
-                                                                                this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo10.destroy()
-                                                                                    this.dialogo11.setVisible(true)
-                                                                                        this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo11.destroy()
-                                                                                            setTimeout(() => {
-                                                                                                this.scene.start('Scene02'); // Correção: Adicione os parênteses aqui
-                                                                                            }, 2000); // 10 segundos (10000 milissegundos)
+                                                this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo7.destroy()
+                                                    this.dialogo10.setVisible(true)
+                                                        
+                                                         this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo10.destroy()
+                                                                this.dialogo11.setVisible(true)
+                                                                        this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo11.destroy()
+                                                                              setTimeout(() => {
+                                                                                this.musicaFase1.stop()
+                                                                               this.scene.start('Scene02'); // Correção: Adicione os parênteses aqui
+                                                                                 }, 2000); // 10 segundos (10000 milissegundos)
                                                                                        
                                                                                                 
-                                                                                        }); 
-                                                                                        
-                                                                                }); 
-                                                                        }); 
-                                                                            
-                                                                    });  
+                                                                                 }); 
                                                             });   
-                                                    });   
-                                                    
-                                            });   
+                                                });              
+                                        });   
                                             
-                                    });  
+                                });  
                             
-                             });
+                        });
 
                         
-                      });
+                });
                 
                     
                     

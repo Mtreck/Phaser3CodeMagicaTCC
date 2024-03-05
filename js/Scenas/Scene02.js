@@ -7,8 +7,13 @@ class Scene02 extends Phaser.Scene{
  
 
     create(){
+  
+        this.musicaFase2 = this.sound.add('audio-fundo2', {
+            loop: true, // defina como verdadeiro se você deseja que a música seja executada em loop
+            volume: 0.1 // defina o volume da música (entre 0 e 1)
+        });
+        this.musicaFase2.play();
         
-
 
 
 
@@ -19,7 +24,6 @@ class Scene02 extends Phaser.Scene{
         this.fundo.displayHeight = 1000
 
       
-
         this.plataformas = this.physics.add.staticGroup()
         this.plataformas.create(0,800,'plataforma1')
         .setScale(1.5,1)
@@ -60,6 +64,9 @@ class Scene02 extends Phaser.Scene{
 
          //--------------Mochila--------------------------------------
         
+         this.mochila = this.add.image(150 , 300, 'mochila')
+         .setVisible(false)
+         .setScale(0.7, 0.7);
 
 
         //---------------------Dialogos----------
@@ -277,6 +284,7 @@ class Scene02 extends Phaser.Scene{
             //---------------colisão player-box-------------------------------
         
             this.physics.add.overlap(this.player,this.box, function ()  { 
+                this.mochila.setVisible(true)
                 if(!this.dialogo1.visible){
                     this.dialogo1.setVisible(false)
                     this.dialogo2.setVisible(true)

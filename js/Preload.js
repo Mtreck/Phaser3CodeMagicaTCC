@@ -7,7 +7,10 @@ class Preload extends Phaser.Scene{
     preload(){
         
             //AUDIOS---------------------------------------
-            this.load.audio('audio-fundo4','img/audio/fundo/fundo-fase4.mp3')
+            this.load.audio('audio-fundo1','audio/Fundo/fundo-fase1.mp3')
+            this.load.audio('audio-fundo2','audio/Fundo/fundo-fase2.mp3')
+            this.load.audio('audio-fundo3','audio/Fundo/fundo-fase3.mp3')
+      
             
             
 
@@ -80,6 +83,7 @@ class Preload extends Phaser.Scene{
         this.load.image('box2_ar','img/objetos/objetos01/box2-ar.png')
         this.load.spritesheet('chama','img/sprites/fase1/chama.png',{frameWidth:150, frameHeight:110}) 
         this.load.spritesheet('ar','img/sprites/fase1/ar.png',{frameWidth:156, frameHeight:100}) 
+        this.load.image('mochila','img/mochila/hub-mochila.png')
 
         // --------- IMAGENS DA CENA  02----------
 

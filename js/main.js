@@ -16,7 +16,7 @@ window.onload = function(){
             Scene02,
             Scene03,
             Scene04,
-            //Scene05,
+            Scene05,
             ],
 
         //vamos configurar o motor de física do jogo

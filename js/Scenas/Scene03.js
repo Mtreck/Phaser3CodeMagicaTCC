@@ -5,7 +5,11 @@ class Scene03 extends Phaser.Scene{
     }
 
     create(){
-        
+        this.musica = this.sound.add('audio-fundo3', {
+            loop: true, // defina como verdadeiro se você deseja que a música seja executada em loop
+            volume: 0.1 // defina o volume da música (entre 0 e 1)
+        });
+        this.musica.play();
     
  
         this.galaxia = this.add.image(0,0,'fundo-pantano').setOrigin(0,0)
