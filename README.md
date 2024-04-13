@@ -22,3 +22,14 @@ Laços de repetição
 Estruturas condicionais
 
 Siga as instruções no jogo para começar a aprender e praticar esses conceitos de programação de uma maneira divertida!
+
+
+*Imagens do jogo
+
+![figura1](https://github.com/Mtreck/TCC_Jogo_Educativo/assets/105645548/20b6b085-3b56-4454-b0bb-f4fb25e25225)
+-----------------------------------------------------------------------------------------------------------------------
+![figura2](https://github.com/Mtreck/TCC_Jogo_Educativo/assets/105645548/be80dc28-becf-4a2c-9291-e9b39290dc7d)
+-----------------------------------------------------------------------------------------------------------------------
+![figura3](https://github.com/Mtreck/TCC_Jogo_Educativo/assets/105645548/c9202ad9-c668-4b37-affb-4c113315d4dd)
+
+
