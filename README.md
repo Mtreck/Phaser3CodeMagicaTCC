@@ -24,7 +24,7 @@ Estruturas condicionais
 Siga as instruções no jogo para começar a aprender e praticar esses conceitos de programação de uma maneira divertida!
 
 
-#Imagens do jogo
+# Imagens do jogo
 
 ![figura1](https://github.com/Mtreck/TCC_Jogo_Educativo/assets/105645548/20b6b085-3b56-4454-b0bb-f4fb25e25225)
 -----------------------------------------------------------------------------------------------------------------------
