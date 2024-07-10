@@ -10,7 +10,8 @@ class Preload extends Phaser.Scene{
             this.load.audio('audio-fundo1','audio/Fundo/fundo-fase1.mp3')
             this.load.audio('audio-fundo2','audio/Fundo/fundo-fase2.mp3')
             this.load.audio('audio-fundo3','audio/Fundo/fundo-fase3.mp3')
-      
+
+          
             
             
 
@@ -38,6 +39,8 @@ class Preload extends Phaser.Scene{
         this.load.image('dialogo9','img/gato/fase1/dialogo9.png')
         this.load.image('dialogo10','img/gato/fase1/dialogo10.png')
         this.load.image('dialogo11','img/gato/fase1/dialogo11.png')
+        this.load.image('movimento','img/teclas/movimento.png')
+        this.load.image('movimentopl','img/teclas/movimento-pl.png')
         //cenario
         this.load.image('cerca1','img/objetos/objetos01/Fence_01.png')
         this.load.image('cerca2','img/objetos/objetos01/Fence_02.png')
@@ -56,7 +59,7 @@ class Preload extends Phaser.Scene{
         this.load.image('peito','img/objetos/objetos01/Decor_Cuirass.png')
         this.load.image('cabeça','img/objetos/objetos01/Decor_Helment.png')
         this.load.image('barril','img/objetos/objetos01/Wooden_Barrel.png')
-
+        
 
 
         // --------- IMAGENS DA CENA  01----------

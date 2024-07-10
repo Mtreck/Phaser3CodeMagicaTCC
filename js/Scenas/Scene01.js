@@ -135,6 +135,10 @@ class Scene01 extends Phaser.Scene{
         this.barril = this.physics.add.image(1700,645,'barril')
         .setScale(0.6)
         
+        this.movimento = this.add.image(260,440,'movimento')
+        .setScale(0.1)
+         this.movimentopl = this.add.image(260,380,'movimentopl')
+        .setScale(0.1)
       
       
       
@@ -242,6 +246,7 @@ class Scene01 extends Phaser.Scene{
            
             this.physics.add.overlap(this.player,this.cat1, function ()  { 
                     this.dialogo1.setVisible(true)
+                    
                 this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo1.destroy()
                     this.dialogo2.setVisible(true)
 
@@ -262,8 +267,12 @@ class Scene01 extends Phaser.Scene{
                                                                         this.input.keyboard.addKey('enter').on('down', () => {   this.dialogo11.destroy()
                                                                               setTimeout(() => {
                                                                                 this.musicaFase1.stop()
-                                                                               this.scene.start('Scene02'); // Correção: Adicione os parênteses aqui
-                                                                                 }, 2000); // 10 segundos (10000 milissegundos)
+                                                                               this.scene.start('Scene02'); 
+                                                                                 this.scene.stop('Scena01');
+                                                                                 this.sound.remove('musicaFase1');
+                                                                                 // Correção: Adicione os parênteses aqui
+                                                                                 }, 1000); // 10 segundos (10000 milissegundos)
+                                                                                 
                                                                                        
                                                                                                 
                                                                                  }); 

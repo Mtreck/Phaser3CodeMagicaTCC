@@ -369,7 +369,9 @@ class Scene02 extends Phaser.Scene{
                                     this.dialogo9.setVisible(true)
                                     setTimeout(() => {
                                         this.scene.start('Scene03'); // Correção: Adicione os parênteses aqui
-                                    }, 3000); // 10 segundos (10000 milissegundos)
+                                        this.scene.stop('Scena02');
+                                        this.textures.removeKey('');
+                                    }, 1000); // 10 segundos (10000 milissegundos)
                                 });
                             }
                           
